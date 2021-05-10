@@ -33,7 +33,7 @@ class App extends Component {
 
               <Route path="/monsters" exact={true}
                 render={routerProps => (
-                  <MonsterssPage {...routerProps}/>
+                  <MonstersPage {...routerProps}/>
                 )}
               />
 
