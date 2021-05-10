@@ -11,7 +11,7 @@ export default class MonstersPage extends Component {
 
   async componentDidMount() {
     const monsters = await getAllMonsters();
-    if (mosnters) {
+    if (monsters) {
       this.setState({ monsters: monsters });
     }
     else {
