@@ -1,7 +1,7 @@
 import { Component } from 'react';
 import MonsterList from './MonsterList';
 import { getAllMonsters, getMonsters } from '../utils/monsters-api';
-import './MonstersPage.css';
+import './MonsterPage.css';
 
 export default class MonstersPage extends Component {
   state = {

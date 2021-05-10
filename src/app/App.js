@@ -3,8 +3,8 @@ import { Component } from 'react';
 import Footer from './Footer';
 import Header from './Header';
 import Home from '../home/Home';
-import MonstersPage from '../monsters/MonstersPage';
-import MonsterDetailPage from '../monster/monsterDetailPage';
+import MonstersPage from '../monsters/MonsterPage';
+import MonsterDetailPage from '../monster/MonsterDetailPage';
 
 import {
   BrowserRouter as Router,

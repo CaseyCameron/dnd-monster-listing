@@ -4,7 +4,7 @@ import './Header.css';
 
 class Header extends Component{
   render(){
-    return(
+    return (
       <header className="Header">
         <h1>React App</h1>
         <nav>
