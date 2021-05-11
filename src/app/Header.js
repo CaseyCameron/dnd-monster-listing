@@ -10,6 +10,7 @@ class Header extends Component{
         <nav>
           <NavLink to="/">Home</NavLink>
           <NavLink to="/monsters">Monsters</NavLink>
+          <NavLink to="/monsters/add">Add Monster</NavLink>
         </nav>
       </header>
     );

@@ -3,6 +3,7 @@ import { Component } from 'react';
 import Footer from './Footer';
 import Header from './Header';
 import Home from '../home/Home';
+import MonsterAddPage from '../monster-add/MonsterAddPage';
 import MonstersPage from '../monsters/MonsterPage';
 import MonsterDetailPage from '../monster/MonsterDetailPage';
 
@@ -36,6 +37,11 @@ class App extends Component {
                   <MonstersPage {...routerProps}/>
                 )}
               />
+
+              <Route path="/monsters/add" exact={true}
+                render={routerProps => (
+                  <MonsterAddPage {...routerProps}/>
+                )}
 
               <Route path="/monsters/:id"
                 render={routerProps => (
