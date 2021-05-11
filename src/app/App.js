@@ -4,8 +4,9 @@ import Footer from './Footer';
 import Header from './Header';
 import Home from '../home/Home';
 import MonsterAddPage from '../monster-add/MonsterAddPage';
-import MonstersPage from '../monsters/MonsterPage';
 import MonsterDetailPage from '../monster/MonsterDetailPage';
+import MonsterEditPage from '../monster-edit/MonsterEditPage';
+import MonstersPage from '../monsters/MonstersPage';
 
 import {
   BrowserRouter as Router,
@@ -42,10 +43,17 @@ class App extends Component {
                 render={routerProps => (
                   <MonsterAddPage {...routerProps}/>
                 )}
+              />
 
-              <Route path="/monsters/:id"
+              <Route path="/monsters/:id" exact={true}
                 render={routerProps => (
                   <MonsterDetailPage {...routerProps}/>
+                )}
+              />
+
+              <Route path="/monsters/:id/edit" exact={true}
+                render={routerProps => (
+                  <MonsterEditPage {...routerProps}/>
                 )}
               />
 
